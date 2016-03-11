@@ -1,2 +1,29 @@
-<h1>Fail#home</h1>
-<p>Find me in app/views/fail/home.html.erb</p>
+<% if user_signed_in? %>
+
+<div class="row">
+
+	<div class="col-xs-3">
+			LEFT
+	</div>
+
+	<div class="col-xs-6">
+		<div class="panel panel-default">
+			CENTER-center-CENTER
+		</div>
+	</div>
+	<div class="col-xs-3">
+		RIGHT
+	</div>
+
+</div>
+
+<% else %>
+
+	<script type="text/javascript">
+		document.location.href ="http://www.echobase.camp"
+	</script>
+
+
+
+
+<% end %>
